@@ -1,13 +1,14 @@
 n=int(input())
-n1=n
-s=0
-f=1
+sum=0
+res=1
 while(n>0):
-    r=n%10;
-    s=s+r;
-    f=f*r;
-    n=n//10;
-if(s==f):
+    r=n%10
+    sum=sum+r
+    res=res*r
+    n=n//10
+if(sum==res):
     print("Spy Number")
 else:
     print("Not Spy Number")
+
+    
